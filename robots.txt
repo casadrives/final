@@ -1,0 +1,92 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /register/
+Disallow: /reset-password/
+Disallow: /verify-email/
+
+# European language paths
+Allow: /fr/
+Allow: /de/
+Allow: /lu/
+Allow: /en/
+Allow: /nl/
+Allow: /it/
+Allow: /es/
+Allow: /pt/
+
+# African language paths
+Allow: /ar/
+Allow: /sw/
+Allow: /ha/
+Allow: /am/
+Allow: /yo/
+Allow: /zu/
+
+# European sitemaps
+Sitemap: https://eu.casadrive.com/sitemap.xml
+Sitemap: https://eu.casadrive.com/fr/sitemap.xml
+Sitemap: https://eu.casadrive.com/de/sitemap.xml
+Sitemap: https://eu.casadrive.com/lu/sitemap.xml
+Sitemap: https://eu.casadrive.com/en/sitemap.xml
+
+# African sitemaps
+Sitemap: https://africa.casadrive.com/sitemap.xml
+Sitemap: https://africa.casadrive.com/ar/sitemap.xml
+Sitemap: https://africa.casadrive.com/sw/sitemap.xml
+Sitemap: https://africa.casadrive.com/en/sitemap.xml
+Sitemap: https://africa.casadrive.com/fr/sitemap.xml
+
+# Block bad bots
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: WebPictures
+Disallow: /
+
+User-agent: NetAttache
+Disallow: /
+
+# Allow good bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl-delay for search engines
+Crawl-delay: 10
+
+# Hosts
+Host: https://eu.casadrive.com
+Host: https://africa.casadrive.com

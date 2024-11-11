@@ -1,0 +1,27 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/casadrive/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp php.ini $DEPLOYPATH
+    
+    # Set proper permissions
+    - /bin/chmod 755 $DEPLOYPATH
+    - /bin/find $DEPLOYPATH -type d -exec /bin/chmod 755 {} \;
+    - /bin/find $DEPLOYPATH -type f -exec /bin/chmod 644 {} \;
+    
+    # Protect sensitive files
+    - /bin/chmod 400 $DEPLOYPATH/.env
+    - /bin/chmod 400 $DEPLOYPATH/php.ini
+    
+    # Create cache directories if they don't exist
+    - /bin/mkdir -p $DEPLOYPATH/cache
+    - /bin/chmod 775 $DEPLOYPATH/cache
+    
+    # Clear cache
+    - /bin/rm -rf $DEPLOYPATH/cache/*
+    
+    # Update symlinks
+    - /bin/ln -s /home/casadrive/logs $DEPLOYPATH/logs
+    - /bin/ln -s /home/casadrive/tmp $DEPLOYPATH/tmp

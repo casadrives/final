@@ -1,0 +1,15 @@
+Contact: mailto:security@casadrive.com
+Contact: https://eu.casadrive.com/security
+Contact: https://africa.casadrive.com/security
+Expires: 2025-12-31T23:59:59.000Z
+Encryption: https://casadrive.com/pgp-key.txt
+Acknowledgments: https://casadrive.com/security/hall-of-fame
+Preferred-Languages: fr, en, de, lu, ar, sw
+Canonical: https://casadrive.com/.well-known/security.txt
+Policy: https://casadrive.com/security-policy
+Hiring: https://casadrive.com/careers
+
+-----BEGIN PGP SIGNED MESSAGE-----
+This security.txt file is signed with our PGP key.
+The public key can be found at: https://casadrive.com/pgp-key.txt
+-----END PGP SIGNED MESSAGE-----
